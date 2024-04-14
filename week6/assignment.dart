@@ -37,4 +37,17 @@ void main() {
   }
 
   print(numberChecker(8));
+
+  // Create a program that takes a list of numbers as input and outputs the largest number in the list.
+  double findMaxNumber(List<double> numbers) {
+    var maxNum = numbers[0];
+    for (var num in numbers) {
+      if (num > maxNum) {
+        maxNum = num;
+      }
+    }
+    return maxNum;
+  }
+
+  print(findMaxNumber([3, 5, 9, -1, 7]));
 }
