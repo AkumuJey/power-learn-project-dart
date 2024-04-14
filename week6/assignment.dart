@@ -50,4 +50,19 @@ void main() {
   }
 
   print(findMaxNumber([3, 5, 9, -1, 7]));
+
+  // Write a program that uses a try-catch block to catch an exception and output an error message.
+  void divide(double num1, double num2) {
+    try {
+      if (num2 == 0) {
+        throw Exception('Cannot divide by zero');
+      }
+      double result = num1 / num2;
+      print(result);
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+
+  divide(4, 0);
 }
