@@ -28,4 +28,13 @@ void main() {
     print(i);
     i--;
   }
+  // Create a program that uses an if-else statement to check if a number is even or odd and output the result.
+  bool numberChecker(int number) {
+    if (number % 2 == 0) {
+      return true;
+    }
+    return false;
+  }
+
+  print(numberChecker(8));
 }
