@@ -22,4 +22,10 @@ void main() {
     default:
       print("I don't know that");
   }
+  // Create a program that uses a while loop to print out the numbers from 20 to 10
+  int i = 20;
+  while (i <= 20 && i >= 10) {
+    print(i);
+    i--;
+  }
 }
